@@ -8,12 +8,16 @@ your app.  Understand that this addon is for Ember applications
 that are compiling their styles using SASS.  __If your Ember
 application is using pure CSS or LESS, than this addon is NOT for you.__
 
+## What Does This Addon Do?
+
 This addon will make sure that the latest version of the
 [`ember-cli-sass` Ember Addon](https://github.com/aexmachina/ember-cli-sass) is
-installed.  In addition, the latest version of the
-[`bootstrap-sass` library](http://http://getbootstrap.com//) from 
-bower will be installed in order to acquire the javascript, fonts, 
-and SASS source.
+installed in your Ember-App.  In addition, the latest version of the
+[`bootstrap-sass` library](https://github.com/twbs/bootstrap-sass) from 
+bower will be downloaded in order to acquire the javascript, fonts, 
+and SASS source.  The relevant javascript and font files are copied to 
+your Ember-App's `assets` directory and are then referred to from the
+stylesheet.
 
 ## Installation
 
@@ -32,6 +36,22 @@ bootstrap source into your application's stylesheet:
     ...
     @import "ember-cli-bootstrap3-sass";
     ...
+
+### Do You Want The Alternate Bootstrap _Theme_ With Fancier Buttons?
+
+Access to Bootstrap's alternate theme is as simple as adding one
+more import: `ember-cli-bootstrap3-theme`.  So your 
+`app/styles/app.scss` should look like this:
+
+    // `app/styles/app.scss`
+    ...
+    @import "ember-cli-bootstrap3-sass";
+    @import "ember-cli-bootstrap3-theme";
+    ...
+
+So it should go without saying, if you want to include some other
+_canned_ theme from bower or _wherever_, you can include it just after
+the aforementioned import(s).
 
 ### Troubleshooting And Tips
 
