@@ -69,24 +69,24 @@ addon does not entertain installing bootstrap-4 at this time.__
 
 # Ember Addon Building And Testing
 
-## Installation
+## Setup
 
-* `git clone` this repository
+* `git clone git@github.com:cybertoothca/ember-cli-bootstrap3-sass.git`
 * `npm install`
 * `bower install`
 
-## Running
+## Running The Dummy Application
 
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-## Running Tests
+## Running Addon Tests
 
 * `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+## Building The Addon
 
 * `ember build`
 
