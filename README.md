@@ -1,6 +1,6 @@
-# ember-cli-bootstrap3-sass
+# ember-cli-bootstrap3-sass [![GitHub version](https://badge.fury.io/gh/cybertoothca%2Fember-cli-bootstrap3-sass.svg)](https://badge.fury.io/gh/cybertoothca%2Fember-cli-bootstrap3-sass)
 
-[![npm version](https://badge.fury.io/js/ember-cli-bootstrap3-sass.svg)](https://badge.fury.io/js/ember-cli-bootstrap3-sass) [![Build Status](https://travis-ci.org/cybertoothca/ember-cli-bootstrap3-sass.svg)](https://travis-ci.org/cybertoothca/ember-cli-bootstrap3-sass) [![Code Climate](https://codeclimate.com/github/cybertoothca/ember-cli-bootstrap3-sass/badges/gpa.svg)](https://codeclimate.com/github/cybertoothca/ember-cli-bootstrap3-sass) [![ember-observer-badge](http://emberobserver.com/badges/ember-cli-bootstrap3-sass.svg)](http://emberobserver.com/addons/ember-cli-bootstrap3-sass) [![License](https://img.shields.io/npm/l/ember-cli-bootstrap3-sass.svg)](LICENSE.md)
+[![npm version](https://badge.fury.io/js/ember-cli-bootstrap3-sass.svg)](https://badge.fury.io/js/ember-cli-bootstrap3-sass) [![Build Status](https://travis-ci.org/cybertoothca/ember-cli-bootstrap3-sass.svg)](https://travis-ci.org/cybertoothca/ember-cli-bootstrap3-sass) [![Code Climate](https://codeclimate.com/github/cybertoothca/ember-cli-bootstrap3-sass/badges/gpa.svg)](https://codeclimate.com/github/cybertoothca/ember-cli-bootstrap3-sass) ![Dependencies](https://david-dm.org/cybertoothca/ember-cli-bootstrap3-sass.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-cli-bootstrap3-sass.svg)](http://emberobserver.com/addons/ember-cli-bootstrap3-sass) [![License](https://img.shields.io/npm/l/ember-cli-bootstrap3-sass.svg)](LICENSE.md)
 
 This addon installs the bootstrap3 javascript components and 
 fonts.  Once installed, you can compile the bootstrap sass into 
@@ -8,12 +8,16 @@ your app.  Understand that this addon is for Ember applications
 that are compiling their styles using SASS.  __If your Ember
 application is using pure CSS or LESS, than this addon is NOT for you.__
 
+## What Does This Addon Do?
+
 This addon will make sure that the latest version of the
 [`ember-cli-sass` Ember Addon](https://github.com/aexmachina/ember-cli-sass) is
-installed.  In addition, the latest version of the
-[`bootstrap-sass` library](http://http://getbootstrap.com//) from 
-bower will be installed in order to acquire the javascript, fonts, 
-and SASS source.
+installed in your Ember-App.  In addition, the latest version of the
+[`bootstrap-sass` library](https://github.com/twbs/bootstrap-sass) from 
+bower will be downloaded in order to acquire the javascript, fonts, 
+and SASS source.  The relevant javascript and font files are copied to 
+your Ember-App's `assets` directory and are then referred to from the
+stylesheet.
 
 ## Installation
 
@@ -33,6 +37,22 @@ bootstrap source into your application's stylesheet:
     @import "ember-cli-bootstrap3-sass";
     ...
 
+### Do You Want The Alternate Bootstrap _Theme_ With Fancier Buttons?
+
+Access to Bootstrap's alternate theme is as simple as adding one
+more import: `ember-cli-bootstrap3-theme`.  So your 
+`app/styles/app.scss` should look like this:
+
+    // `app/styles/app.scss`
+    ...
+    @import "ember-cli-bootstrap3-sass";
+    @import "ember-cli-bootstrap3-theme";
+    ...
+
+So it should go without saying, if you want to include some other
+_canned_ theme from bower or _wherever_, you can include it just after
+the aforementioned import(s).
+
 ### Troubleshooting And Tips
 
 1. You need `ember-cli-sass` to be configured in your application.  This means
@@ -49,24 +69,24 @@ addon does not entertain installing bootstrap-4 at this time.__
 
 # Ember Addon Building And Testing
 
-## Installation
+## Setup
 
-* `git clone` this repository
+* `git clone git@github.com:cybertoothca/ember-cli-bootstrap3-sass.git`
 * `npm install`
 * `bower install`
 
-## Running
+## Running The Dummy Application
 
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-## Running Tests
+## Running Addon Tests
 
 * `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+## Building The Addon
 
 * `ember build`
 
