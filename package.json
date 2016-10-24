@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bootstrap3-sass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This addon installs the bootstrap3 javascript components and fonts.  Once installed, you can compile the bootstrap sass into your app.  Understand that this addon is for Ember applications that are compiling their styles using SASS.  __If your Ember application is using pure CSS or LESS, than this addon is NOT for you.__",
   "directories": {
     "doc": "doc",
