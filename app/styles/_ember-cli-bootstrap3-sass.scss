@@ -3,11 +3,12 @@
  * `ember-cli-bootstrap3-sass` addon installation.
  * OVERRIDE: if you want to point to fonts installed elsewhere, change this
  * variable before you `@import "ember-cli-bootstrap3-sass"`.
+ * NOTE: if you override the path, it must end with a trailing slash.
  */
-$icon-font-path: "/assets/bootstrap/";
+$icon-font-path: './bootstrap/' !default;
 
 /**
  * The `ember-cli-bootstrap3-sass` addon installs bootstrap via bower
  * and then compiles bootstrap into your app using the SASS source.
  */
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
