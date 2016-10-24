@@ -68,6 +68,22 @@ the trailing slash!__
     ...
 
 
+### Do You Want The Alternate Bootstrap _Theme_ With Fancier Buttons?
+
+Access to Bootstrap's alternate theme is as simple as adding one
+more import: `ember-cli-bootstrap3-theme`.  So your 
+`app/styles/app.scss` should look like this:
+
+    // `app/styles/app.scss`
+    ...
+    @import "ember-cli-bootstrap3-sass";
+    @import "ember-cli-bootstrap3-theme";
+    ...
+
+So it should go without saying, if you want to include some other
+_canned_ theme from bower or _wherever_, you can include it just after
+the aforementioned import(s).
+
 ### Troubleshooting And Tips
 
 1. You need `ember-cli-sass` to be configured in your application.  This means
