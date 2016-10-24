@@ -34,8 +34,39 @@ bootstrap source into your application's stylesheet:
 
     // `app/styles/app.scss`
     ...
-    @import "ember-cli-bootstrap3-sass";
+    @import 'ember-cli-bootstrap3-sass';
     ...
+
+### Alternate Bootstrap _Theme_ With Fancier Buttons?
+
+Access to Bootstrap's alternate theme is as simple as adding one
+more import: `ember-cli-bootstrap3-theme`.  So your 
+`app/styles/app.scss` should look like this:
+
+    // `app/styles/app.scss`
+    ...
+    @import 'ember-cli-bootstrap3-sass';
+    @import 'ember-cli-bootstrap3-theme';
+    ...
+
+So it should go without saying, if you want to include some other
+_canned_ theme from bower or _wherever_, you can include it just after
+the aforementioned import(s).
+
+### Alternate Glyphicon Font Path?
+
+By default, this addon takes care of the Glyphicon font paths for you.
+If for some reason you need to customize this path, you can do so
+by supplying the `$icon-font-path` variable value before you import
+`ember-cli-bootstrap3-sass`.  __Make sure the path you specify includes
+the trailing slash!__
+
+    // `app/styles/app.scss`
+    ...
+    $icon-font-path: '/some/absolute/path/'
+    @import 'ember-cli-bootstrap3-sass';
+    ...
+
 
 ### Do You Want The Alternate Bootstrap _Theme_ With Fancier Buttons?
 
@@ -59,7 +90,7 @@ the aforementioned import(s).
 that by default your styles have been compiled inside your
 `app/styles/app.scss` file.  If you've adjusted the configuration to use a
 different file, then you must add the 
-`@import "ember-cli-bootstrap3-sass"` directive there.
+`@import 'ember-cli-bootstrap3-sass'` directive there.
 1. As bootstrap-3 version updates are made available, simply reinstall your
 bower packages and in some cases update your `bower.json` to ensure the version
 you want is being brought into your application.  __Understand that this
