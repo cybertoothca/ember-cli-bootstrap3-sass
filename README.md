@@ -60,6 +60,31 @@ So it should go without saying, if you want to include some other
 _canned_ theme from bower or _wherever_, you can include it just after
 the aforementioned import(s).
 
+
+### Bootstrap _Variables_ & _Mixins_ Convenience Importer
+
+Sometimes you need access to the default Bootstrap variables or you require Bootstrap's
+mixins to generate prior to your loading of the full bootstrap suite.  I've included both 
+convenience imports to this addon.
+
+#### Bootstrap Variables
+
+    // `app/styles/app.scss`
+    ...
+    @import 'ember-cli-bootstrap3-variables';
+    ...
+
+The bootstrap variables will now be available for you to override or re-use in whatever way you see fit.
+
+#### Bootstrap Mixins
+
+    // `app/styles/app.scss`
+    ...
+    @import 'ember-cli-bootstrap3-mixins';
+    ...
+
+The bootstrap mixins will be available once this has been imported.
+
 ### Alternate Glyphicon Font Path?
 
 By default, this addon takes care of the Glyphicon font paths for you.
