@@ -1,4 +1,13 @@
 /**
+ * The `$icon-font-path` is where the Bootstrap glyphicon fonts have been copied during the
+ * `ember-cli-bootstrap3-sass` addon installation.
+ * OVERRIDE: if you want to point to fonts installed elsewhere, change this
+ * variable before you `@import "ember-cli-bootstrap3-sass"`.
+ * NOTE: if you override the path, it must end with a trailing slash.
+ */
+$icon-font-path: './bootstrap/' !default;
+
+/**
  * From the bower_components pull in the bootstrap variables file.  Allows you to use or customize the variables before
  * processing them through the bootstrap process.
  */
