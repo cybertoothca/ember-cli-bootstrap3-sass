@@ -101,11 +101,13 @@ the trailing slash!__
 
 ### Upgrading
 
-When working through the Ember upgrade process, I recommend
-invoking the `ember install ember-cli-bootstrap3-sass` command once 
-you are done to get the latest version of the addon.  Notice that this
-will likely update the `bootstrap-sass` bower dependency to the latest
-3.x.x version.
+If you want to upgrade this addon at any time, simply invoke
+the `ember install ember-cli-bootstrap3-sass` command.
+
+When working through the Ember-CLI upgrade process, I again recommend
+invoking the `ember install ember-cli-bootstrap3-sass` command to get 
+the latest version of the addon.  Notice that this may update the 
+`bootstrap-sass` bower dependency to the latest 3.x.x version.
 
 ### Troubleshooting And Tips
 
